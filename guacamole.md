@@ -4,3 +4,4 @@
 - salt (2)
 # Instructions
 - peel the avocados
+- In a bowl mix them up all.
