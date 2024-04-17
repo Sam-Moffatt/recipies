@@ -7,3 +7,4 @@
 - put them in a bowl
 - Mix them up all.
 - Eat
+- clean dishes
