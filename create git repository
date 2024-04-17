@@ -1,0 +1,42 @@
+# create a git repository
+
+## ensure to open folder for the specific project
+cd ~/Desktop/git_workshop
+
+# the example is using RECIPIES
+
+# Then we tell Git to make recipes a repository – a place where Git can store versions of our files:
+git init
+
+
+# we add the -a flag to show everything, we can see that Git has created a hidden directory within recipes called .git:
+ls -a
+
+
+# Next, we will change the default branch to be called main. This might be the default branch depending on your settings and version of git. See the setup episode for more information on this change.git checkout -b main
+## checkout allows for the switching of branches
+git checkout -b main
+
+# check status of project
+git status
+
+
+# to add untracked files to the commit list
+git add guacamole.md
+
+# Git now knows that it’s supposed to keep track of guacamole.md, but it hasn’t recorded these changes as a commit yet. To get it to do that, we need to run one more command:
+# We use the -m flag (for “message”) to record a short, descriptive, and specific comment that will help us remember later on what we did and why. If we just run git commit without the -m option, Git will launch nano (or whatever other editor we configured as core.editor) so that we can write a longer message.
+
+
+git commit -m "Create a template for recipe"
+
+
+# if we want a log of our git actions 
+git log
+
+# we do this using git diff. This shows us the differences between the current state of the file and the most recently saved version:
+git diff
+
+# to update file again we have to add the file to the commit list and then commit
+git add guacamole.md
+git commit -m "Add basic guacamole's ingredients"

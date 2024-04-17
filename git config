@@ -1,0 +1,9 @@
+# configure username and email for GIT - only needs to be done on a new computer
+git config --global user.name "Sam-Moffatt"
+git config --global user.email "samuel.moffatt@student.curtin.edu.au"
+
+# Git (2.28+) allows configuration of the name of the branch created when you initialize any new repository. Alfredo decides to use that feature to set it to main so it matches the cloud service he will eventually use.
+git config --global init.defaultBranch main
+
+# check settings at any time 
+git config --list
