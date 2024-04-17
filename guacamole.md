@@ -8,3 +8,4 @@
 - Mix them up all.
 - Eat
 - clean dishes
+- share with friends
